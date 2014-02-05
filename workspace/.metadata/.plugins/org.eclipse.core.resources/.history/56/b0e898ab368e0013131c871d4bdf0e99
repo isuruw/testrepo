@@ -1,0 +1,13 @@
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+	name="MyHelloTestProxy" transports="https,http" statistics="disable" trace="disable"
+	startOnLoad="true">
+	<target>
+		<outSequence>
+			<send />
+		</outSequence>
+		<endpoint
+		name="endpoint_urn_uuid_6675c72c-4733-4f09-b00c-d10bc8df70e2">
+		<address uri="http://10.28.235.56:9764/services/echo" />
+		</endpoint>
+	</target>
+</proxy>

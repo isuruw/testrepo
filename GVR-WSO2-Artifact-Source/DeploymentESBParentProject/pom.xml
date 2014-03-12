@@ -23,7 +23,10 @@
     </plugins>
   </build>
   <modules>
-    <module>DeploymentESBConfigProject</module>
-    <module>DeploymentESBCompositeProject</module>
+    <module>DeploymentESBConfigProject/pom.xml</module>
+    <module>DeploymentESBCompositeProject/pom.xml</module>
   </modules>
+  <properties>
+    <maven.deploy.skip>true</maven.deploy.skip>    
+  </properties>
 </project>

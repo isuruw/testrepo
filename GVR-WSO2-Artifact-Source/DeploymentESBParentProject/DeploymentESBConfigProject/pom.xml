@@ -107,6 +107,13 @@
       </plugin>
     </plugins>
   </build>
+  <!--<distributionManagement>
+   <repository>
+     <id>soda-wso2-repo</id>
+     <name>DevSodaWSO2ArtifactsRepo</name>
+     <url>http://localhost:8081/nexus/content/repositories/soda-wso2-repo</url>
+   </repository>
+  </distributionManagement>-->
   <repositories>
     <repository>
       <releases>
@@ -128,6 +135,7 @@
     </pluginRepository>
   </pluginRepositories>
   <properties>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <maven.test.skip>false</maven.test.skip>
     <CApp.type>bpel/workflow=zip,lib/registry/filter=jar,webapp/jaxws=war,lib/library/bundle=jar,service/dataservice=dbs,synapse/local-entry=xml,synapse/proxy-service=xml,carbon/application=car,registry/resource=zip,lib/dataservice/validator=jar,synapse/endpoint=xml,web/application=war,lib/carbon/ui=jar,service/axis2=aar,synapse/sequence=xml,synapse/configuration=xml,wso2/gadget=dar,lib/registry/handlers=jar,lib/synapse/mediator=jar,synapse/task=xml,synapse/api=xml,synapse/template=xml,synapse/message-store=xml,synapse/message-processors=xml</CApp.type>
   </properties>
